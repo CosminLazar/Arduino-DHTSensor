@@ -1,5 +1,5 @@
 # Arduino-DHTSensor
-Arduino library for communicating with the DHT22/AM2302 Digital Temperature And Humidity Sensor without using a pull up resistor.
+Arduino library for communicating with the DHT22/AM2302 Digital Temperature And Humidity Sensor without using a pull up resistor. In theory, this should also work for the DHT11 sensor, but I haven't tried it yet.
 
 ## Setup
 Because there is no requirement for a pull up resistor setting up the sensor is very easy and it only requires connecting the sensor to your board via 3 jumper cables.
