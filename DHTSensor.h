@@ -1,4 +1,11 @@
-#include "Arduino.h"
+#ifndef _DHTSENSORMEASUREMENT_h
+#define _DHTSENSORMEASUREMENT_h
+
+#if defined(ARDUINO) && ARDUINO >= 100
+#include "arduino.h"
+#else
+#include "WProgram.h"
+#endif
 
 class DHTSensorMeasurement
 {
@@ -37,3 +44,5 @@ private:
 	bool HasTimedOut(unsigned long samplingStart);
 	bool IsChecksumValid(uint8_t* dataArray);
 };
+
+#endif
